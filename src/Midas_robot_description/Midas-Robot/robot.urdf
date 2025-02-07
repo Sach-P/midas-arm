@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<robot name="Midas">
+<link name="base">
+<visual>
+<origin xyz="-1.1449174941446926823e-16 0 0" rpy="-1.570796326794896558 -1.1102230246247470723e-16 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23hs22-2804s.stl"/>
+</geometry>
+<material name="23hs22-2804s_material">
+<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-1.1449174941446926823e-16 0 0" rpy="-1.570796326794896558 -1.1102230246247470723e-16 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23hs22-2804s.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.2742891967527403354e-15 1.2198545598937239283e-15 0.072250000000016356694" rpy="1.570796326794896558 3.0507815995745220066e-16 2.0594885173533126199" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/ring.stl"/>
+</geometry>
+<material name="ring_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="2.2742891967527403354e-15 1.2198545598937239283e-15 0.072250000000016356694" rpy="1.570796326794896558 3.0507815995745220066e-16 2.0594885173533126199" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/ring.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.008073568289266357112 0.043596852108962372285 0.072250000000016398327" rpy="1.5707963267948978903 1.6641573416551487972e-15 -1.7808240093215093047" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+<material name="planet_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.008073568289266357112 0.043596852108962372285 0.072250000000016398327" rpy="1.5707963267948978903 1.6641573416551487972e-15 -1.7808240093215093047" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.5647205753310799992e-15 5.5511151231257827021e-16 0.072250000000016356694" rpy="1.57079632679489678 6.7998872472763281959e-16 2.0594885173533090672" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/top_cover.stl"/>
+</geometry>
+<material name="top_cover_material">
+<color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.5647205753310799992e-15 5.5511151231257827021e-16 0.072250000000016356694" rpy="1.57079632679489678 6.7998872472763281959e-16 2.0594885173533090672" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/top_cover.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.02871550992756377596 -0.0053177378445094375392 0.064250000000016349588" rpy="-1.5707963267948945596 2.5084471746947033178e-16 -0.73362645812491122932" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+<material name="planet_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.02871550992756377596 -0.0053177378445094375392 0.064250000000016349588" rpy="-1.5707963267948945596 2.5084471746947033178e-16 -0.73362645812491122932" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-8.3266726846886740532e-17 0 0.072250000000016439961" rpy="1.5707963267948958919 -1.5859141323471743844e-15 -1.8675022996339341042" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/bottom_cover.stl"/>
+</geometry>
+<material name="bottom_cover_material">
+<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-8.3266726846886740532e-17 0 0.072250000000016439961" rpy="1.5707963267948958919 -1.5859141323471743844e-15 -1.8675022996339341042" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/bottom_cover.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.018963051027797363235 -0.022209492157640255833 0.072250000000016370572" rpy="1.570796326794896558 -5.4300922672773174923e-17 1.3607686442682840333" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+<material name="planet_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.018963051027797363235 -0.022209492157640255833 0.072250000000016370572" rpy="1.570796326794896558 -5.4300922672773174923e-17 1.3607686442682840333" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.2840166597300263533e-15 1.2152114320151168013e-15 0.072250000000016356694" rpy="1.570796326794896558 5.1595185780174672198e-17 0.052653963703470973989" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/carrier.stl"/>
+</geometry>
+<material name="carrier_material">
+<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="2.2840166597300263533e-15 1.2152114320151168013e-15 0.072250000000016356694" rpy="1.570796326794896558 5.1595185780174672198e-17 0.052653963703470973989" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/carrier.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.2833465743107972165e-15 1.213440460589933622e-15 0.064250000000016377344" rpy="-1.5707963267948934494 1.0704695233233910285e-15 -1.2554607168613407531" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/sun.stl"/>
+</geometry>
+<material name="sun_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="2.2833465743107972165e-15 1.213440460589933622e-15 0.064250000000016377344" rpy="-1.5707963267948934494 1.0704695233233910285e-15 -1.2554607168613407531" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/sun.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="platform">
+<visual>
+<origin xyz="0 -1.2246467991472765398e-18 -0.009999999999999995004" rpy="1.232595164407830946e-32 -2.4651903288156624393e-32 -5.2207661416554567161e-17" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/platform.stl"/>
+</geometry>
+<material name="platform_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -1.2246467991472765398e-18 -0.009999999999999995004" rpy="1.232595164407830946e-32 -2.4651903288156624393e-32 -5.2207661416554567161e-17" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/platform.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.6741520700367351027e-17 0.067499999999999477085 -0.04457000000000010953" rpy="5.5524931820137805455e-17 1.5707963267948947816 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23hs22-2804s.stl"/>
+</geometry>
+<material name="23hs22-2804s_material">
+<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.6741520700367351027e-17 0.067499999999999477085 -0.04457000000000010953" rpy="5.5524931820137805455e-17 1.5707963267948947816 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23hs22-2804s.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.0444733542316001519e-16 -0.11199999999999998845 -0.044569999999999915241" rpy="3.1415926535897917837 -0.63879920846746851559 -4.0153510517335879718e-15" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/flange2.stl"/>
+</geometry>
+<material name="flange2_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-1.0444733542316001519e-16 -0.11199999999999998845 -0.044569999999999915241" rpy="3.1415926535897917837 -0.63879920846746851559 -4.0153510517335879718e-15" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/flange2.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.0142822431806847807e-16 -0.080000000000000029421 -0.044569999999999915241" rpy="-3.1415926535897917837 1.3189715413038964381e-16 3.141592653589793116" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23-motor_mount.stl"/>
+</geometry>
+<material name="23-motor_mount_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-1.0142822431806847807e-16 -0.080000000000000029421 -0.044569999999999915241" rpy="-3.1415926535897917837 1.3189715413038964381e-16 3.141592653589793116" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23-motor_mount.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.014796005033029264314 -0.027250000000000204614 -0.030605231204780952714" rpy="-3.1415926535897917837 1.3189715413038974241e-16 3.141592653589793116" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/composite_part_1.stl"/>
+</geometry>
+<material name="composite_part_1_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.014796005033029264314 -0.027250000000000204614 -0.030605231204780952714" rpy="-3.1415926535897917837 1.3189715413038974241e-16 3.141592653589793116" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/composite_part_1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="j2">
+<visual>
+<origin xyz="-0.1905999999999999639 -2.7755575615628913511e-17 -0.062000000000000971001" rpy="-1.5707963267948958919 -5.97157993313111585e-15 -1.57079632679489678" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23hs22-2804s.stl"/>
+</geometry>
+<material name="23hs22-2804s_material">
+<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.1905999999999999639 -2.7755575615628913511e-17 -0.062000000000000971001" rpy="-1.5707963267948958919 -5.97157993313111585e-15 -1.57079632679489678" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/23hs22-2804s.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.3877787807814456755e-17 -2.7755575615628913511e-17 0" rpy="1.570796326794896558 1.6855739234721192622e-17 -1.9780814093964471495e-17" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/upperarm.stl"/>
+</geometry>
+<material name="upperarm_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.3877787807814456755e-17 -2.7755575615628913511e-17 0" rpy="1.570796326794896558 1.6855739234721192622e-17 -1.9780814093964471495e-17" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/upperarm.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.1905999999999999639 0 0.017250000000016613155" rpy="1.5707963267948970021 -2.2055164235487927261e-17 -2.3561944901923426166" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/ring.stl"/>
+</geometry>
+<material name="ring_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.1905999999999999639 0 0.017250000000016613155" rpy="1.5707963267948970021 -2.2055164235487927261e-17 -2.3561944901923426166" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/ring.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.16501369729581036316 -0.0025985868884551011071 0.017250000000016876833" rpy="1.5707963267948930053 5.4431113338167314858e-15 -2.2374540801420059744" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+<material name="planet_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.16501369729581036316 -0.0025985868884551011071 0.017250000000016876833" rpy="1.5707963267948930053 5.4431113338167314858e-15 -2.2374540801420059744" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.19059999999999990838 8.3266726846886740532e-17 0.017250000000016599278" rpy="1.57079632679489678 -2.8871676823717530665e-16 -2.3561944901923412843" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/top_cover.stl"/>
+</geometry>
+<material name="top_cover_material">
+<color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.19059999999999990838 8.3266726846886740532e-17 0.017250000000016599278" rpy="1.57079632679489678 -2.8871676823717530665e-16 -2.3561944901923412843" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/top_cover.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.18630200193640966688 0.042319108114335757254 0.009250000000016661561" rpy="-1.570796326794896558 2.7728445275168562639e-15 -1.1902565289454078989" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+<material name="planet_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.18630200193640966688 0.042319108114335757254 0.009250000000016661561" rpy="-1.570796326794896558 2.7728445275168562639e-15 -1.1902565289454078989" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.1905999999999999639 -5.5511151231257827021e-17 0.017250000000016599278" rpy="1.570796326794896558 -3.6476581565618535824e-17 1.089472336390025872e-15" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/bottom_cover.stl"/>
+</geometry>
+<material name="bottom_cover_material">
+<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.1905999999999999639 -5.5511151231257827021e-17 0.017250000000016599278" rpy="1.570796326794896558 -3.6476581565618535824e-17 1.089472336390025872e-15" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/bottom_cover.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.22939842172431021416 -0.017437378548682436197 0.017250000000016793567" rpy="1.5707963267948903408 2.3086442656521055573e-15 0.90413857344778725267" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+<material name="planet_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.22939842172431021416 -0.017437378548682436197 0.017250000000016793567" rpy="1.5707963267948903408 2.3086442656521055573e-15 0.90413857344778725267" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/planet.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.1905999999999999639 5.5511151231257827021e-17 0.0172500000000167103" rpy="1.5707963267948994446 -5.7439847103031762517e-16 3.0822224485646239067" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/carrier.stl"/>
+</geometry>
+<material name="carrier_material">
+<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.1905999999999999639 5.5511151231257827021e-17 0.0172500000000167103" rpy="1.5707963267948994446 -5.7439847103031762517e-16 3.0822224485646239067" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/carrier.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.1905999999999999639 8.3266726846886740532e-17 0.0092500000000166060499" rpy="-1.5707963267949098807 8.1528043177160854498e-15 -1.0228789834981364404" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/sun.stl"/>
+</geometry>
+<material name="sun_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.1905999999999999639 8.3266726846886740532e-17 0.0092500000000166060499" rpy="-1.5707963267949098807 8.1528043177160854498e-15 -1.0228789834981364404" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/sun.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="j3">
+<visual>
+<origin xyz="5.5511151231257827021e-17 0.023715020080509241485 -0.025999999999999988398" rpy="3.141592653589793116 8.6153268106496119743e-18 4.2417739251903507471e-20" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17-motor-mount.stl"/>
+</geometry>
+<material name="17-motor-mount_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="5.5511151231257827021e-17 0.023715020080509241485 -0.025999999999999988398" rpy="3.141592653589793116 8.6153268106496119743e-18 4.2417739251903507471e-20" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17-motor-mount.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-3.8857805861880478915e-16 0.023715020080509491285 -0.025999999999999710842" rpy="1.570796326794896558 -9.7548862664510566995e-17 -6.2920825862053634946e-15" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17he19-2004s.stl"/>
+</geometry>
+<material name="17he19-2004s_material">
+<color rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-3.8857805861880478915e-16 0.023715020080509491285 -0.025999999999999710842" rpy="1.570796326794896558 -9.7548862664510566995e-17 -6.2920825862053634946e-15" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17he19-2004s.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="j4">
+<visual>
+<origin xyz="0.02000000000000035083 2.7755575615628913511e-17 0.22388000000000071732" rpy="-5.8043504494854028652e-17 2.144421283561755415e-16 1.5707963267948861219" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/horizontal_mount-17.stl"/>
+</geometry>
+<material name="horizontal_mount-17_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.02000000000000035083 2.7755575615628913511e-17 0.22388000000000071732" rpy="-5.8043504494854028652e-17 2.144421283561755415e-16 1.5707963267948861219" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/horizontal_mount-17.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.498001805406602216e-16 1.249000902703301108e-16 0.22388000000000127243" rpy="-3.4649867183022031308e-16 1.5707963267948952257 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17hs08-1004s.stl"/>
+</geometry>
+<material name="17hs08-1004s_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="2.498001805406602216e-16 1.249000902703301108e-16 0.22388000000000127243" rpy="-3.4649867183022031308e-16 1.5707963267948952257 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17hs08-1004s.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.010000000000000036637 0.014999999999999999445 0.015000000000000013323" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/rotator.stl"/>
+</geometry>
+<material name="rotator_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.010000000000000036637 0.014999999999999999445 0.015000000000000013323" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/rotator.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="j5">
+<visual>
+<origin xyz="0.033600000000000018741 0.011427329309938019652 0" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/j6_mount.stl"/>
+</geometry>
+<material name="j6_mount_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.033600000000000018741 0.011427329309938019652 0" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/j6_mount.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.010599999999999110134 -0.014572670690060782195 -0.022500438715886000862" rpy="-1.570796326794896558 -4.509380806628536291e-18 -1.57079632679489678" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17hs08-1004s.stl"/>
+</geometry>
+<material name="17hs08-1004s_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.010599999999999110134 -0.014572670690060782195 -0.022500438715886000862" rpy="-1.570796326794896558 -4.509380806628536291e-18 -1.57079632679489678" />
+<geometry>
+<mesh filename="package://Midas_robot_description/Midas-Robot/17hs08-1004s.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0.017372053641063710944 8.5732905752094676344e-05 -0.018725012423817403995" rpy="0 0 0"/>
+<mass value="0.017895069333323972149" />
+<inertia ixx="5.953631781404882633e-06" ixy="1.3056892341228224919e-06"  ixz="1.2202024250093836324e-06" iyy="6.6314658605512585574e-06" iyz="-2.1787577437823206637e-07" izz="6.507080094899798787e-06" />
+</inertial>
+</link>
+
+<joint name="J5" type="revolute">
+<origin xyz="0.029250000000005799139 1.249000902703301108e-16 0.22388000000000121692" rpy="1.0502418836819603168e-16 -1.5707963267948885644 0" />
+<parent link="j4" />
+<child link="j5" />
+<axis xyz="0 0 1"/>
+<limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="J4" type="revolute">
+<origin xyz="-3.8857805861880478915e-16 0.034965020080509695566 -0.025999999999999794109" rpy="-1.570796326794896558 -0.33289558580758754625 1.7660707286997906429e-17" />
+<parent link="j3" />
+<child link="j4" />
+<axis xyz="0 0 1"/>
+<limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="J3" type="revolute">
+<origin xyz="-0.19059999999999990838 5.5511151231257827021e-17 0.044250000000016970203" rpy="3.1415926535897926719 -1.7906706643505784883e-16 -0.955726394497759979" />
+<parent link="j2" />
+<child link="j3" />
+<axis xyz="0 0 1"/>
+<limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="J2" type="revolute">
+<origin xyz="-1.0587627264628472677e-16 -0.11249999999999996114 -0.044569999999999915241" rpy="-1.5707963267948981123 -0.43160203730805885014 1.1852745712718701778e-15" />
+<parent link="platform" />
+<child link="j2" />
+<axis xyz="0 0 1"/>
+<limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="J1" type="revolute">
+<origin xyz="2.2802857265297040473e-15 1.2236906322620464735e-15 0.099250000000016380675" rpy="3.141592653589793116 2.0372578431463831491e-16 0.28110427297966683602" />
+<parent link="base" />
+<child link="platform" />
+<axis xyz="0 0 1"/>
+<limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>

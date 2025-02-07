@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "b8ac75c78771d7c79226a5ed",
+    "documentMicroversion": "cf53a73d03db3a62df94b9dd",
+    "elementId": "aa1861e15c94132779a3687f",
+    "fullConfiguration": "default",
+    "id": "MskkEKLt9ZX2DvlMW",
+    "isStandardContent": false,
+    "name": "UpperArm <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}
