@@ -9,7 +9,7 @@
 #include <moveit_msgs/msg/display_trajectory.hpp>
 
 
-class custom_paths::CartesianPathsNode {
+class custom_paths::CartesianPathsNode: public rclcpp::Node {
 
 public:
 
@@ -23,8 +23,10 @@ private:
     static const std::string PLANNING_GROUP_ARM = "ur_manipulator";
 
     moveit::planning_interface::MoveGroupInterface move_group_arm;
+
+    void custom_paths::CartesianPathsNode::follow_path(const std::vector<geometry_msgs::msg::Pose>& waypoints);
     
-    std::vector<double> joint_group_positions_arm;
+    // std::vector<double> joint_group_positions_arm;
 
 
     

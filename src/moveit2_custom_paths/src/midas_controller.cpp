@@ -20,4 +20,5 @@ void midas_controller::MidasControllerNode::joint_state_callback(const sensor_ms
     RCLCPP_INFO(this->get_logger(), "Positions: %s", rcpputils::join(joint_states->position, ", ").c_str());
 
     //Hardware Interface Here
+
 }
