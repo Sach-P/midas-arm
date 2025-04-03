@@ -7,7 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(moveit_core REQUIRED)
@@ -23,6 +23,17 @@ find_package(sensor_msgs REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+      "srv/ResetJointStates.srv" 
+      DEPENDENCIES    
+)
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} rosidl_typesupport_cpp)
+
+include_directories(include)
+include_directories(SYSTEM)
+include_directories(${rosidl_default_runtime_INCLUDE_DIRS})
 # add_executable(cartesian_paths src/cartesian_paths.cpp)
 # target_include_directories(cartesian_paths PUBLIC
 #   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -32,14 +43,16 @@ find_package(sensor_msgs REQUIRED)
 # install(TARGETS cartesian_paths
 #   DESTINATION lib/${PROJECT_NAME})
 
+
+
 add_executable(midas_controller_node src/midas_controller_node.cpp src/midas_controller.cpp)
 target_include_directories(midas_controller_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 target_compile_features(midas_controller_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS midas_controller_node
-  DESTINATION lib/${PROJECT_NAME})
+# install(TARGETS midas_controller_node
+#   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -71,9 +84,16 @@ endif()
 
 ament_target_dependencies(midas_controller_node
     ament_cmake
-	rclcpp
-	rclcpp_action
-  sensor_msgs)
+    rclcpp
+    rclcpp_action
+    sensor_msgs
+    moveit_core
+    moveit_ros_planning_interface
+    interactive_markers
+    moveit_ros_planning
+    control_msgs)
+
+    
 
   # Install the executable
 install(TARGETS 
