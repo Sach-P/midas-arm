@@ -25,7 +25,7 @@
 
 #include <sensor_msgs/msg/joint_state.hpp>
 
-#include "moveit2_custom_paths/srv/reset_joint_states.hpp"
+#include "moveit2_custom_paths/moveit2_custom_paths/srv/reset_joint_states.hpp"
 
 
 namespace midas_controller{
