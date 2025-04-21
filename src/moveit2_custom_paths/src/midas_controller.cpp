@@ -1,15 +1,19 @@
 #include "moveit2_custom_paths/midas_controller.h"
-#include <moveit/move_group_interface/move_group_interface.h>
-#include <moveit/planning_scene_interface/planning_scene_interface.h>
 
-#include <moveit_msgs/msg/display_robot_state.hpp>
 
 
 midas_controller::MidasControllerNode::MidasControllerNode(): Node("midas_controller_node"){
 
-    this->joint_state_sub = this->create_subscription<sensor_msgs::msg::JointState>("joint_states", 10, std::bind(&midas_controller::MidasControllerNode::joint_state_callback, this, std::placeholders::_1));
 
-    this->reset_joint_states_srv = this->create_service<moveit2_custom_paths::srv::ResetJointStates>("reset_joint_states", std::bind(&midas_controller::MidasControllerNode::reset_joint_states, this, std::placeholders::_1));
+    this->js_cb_group = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+    auto js_sub_opt = rclcpp::SubscriptionOptions();
+    js_sub_opt.callback_group = this->js_cb_group;
+
+    this->joint_state_sub = this->create_subscription<sensor_msgs::msg::JointState>("joint_states", 10, std::bind(&midas_controller::MidasControllerNode::joint_state_callback, this, std::placeholders::_1), js_sub_opt);
+
+    this->rjs_cb_group = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+    this->reset_joint_states_srv = this->create_service<moveit2_custom_paths::srv::ResetJointStates>("reset_joint_states", 
+        std::bind(&midas_controller::MidasControllerNode::reset_joint_states, this, std::placeholders::_1, std::placeholders::_2), rmw_qos_profile_services_default, this->rjs_cb_group);
 }
 
 midas_controller::MidasControllerNode::~MidasControllerNode(){}
@@ -27,11 +31,10 @@ void midas_controller::MidasControllerNode::joint_state_callback(const sensor_ms
 
 }
 
-void midas_controller::MidasControllerNode::reset_joint_states(std::shared_ptr<moveit2_custom_paths::srv::ResetJointStates::Response> res){
-    static const std::string PLANNING_GROUP_ARM = "ur_manipulator";
+void midas_controller::MidasControllerNode::reset_joint_states(std::shared_ptr<moveit2_custom_paths::srv::ResetJointStates::Request> /*req */, std::shared_ptr<moveit2_custom_paths::srv::ResetJointStates::Response> res){
+    static const std::string PLANNING_GROUP_ARM = "arm";
 
-    moveit::planning_interface::MoveGroupInterface move_group_arm(
-        move_group_node, PLANNING_GROUP_ARM);
+    moveit::planning_interface::MoveGroupInterface move_group_arm(midas_controller::MidasControllerNode::shared_from_this(), PLANNING_GROUP_ARM);
   
     const moveit::core::JointModelGroup *joint_model_group_arm =
         move_group_arm.getCurrentState()->getJointModelGroup(PLANNING_GROUP_ARM);
@@ -47,7 +50,7 @@ void midas_controller::MidasControllerNode::reset_joint_states(std::shared_ptr<m
     move_group_arm.setStartStateToCurrentState();
 
     // Go Home
-    RCLCPP_INFO(LOGGER, "Going Home");
+    RCLCPP_INFO(this->get_logger(), "Going Home");
 
     joint_group_positions_arm[0] = 0.00;  // Shoulder Pan
     joint_group_positions_arm[1] = 0.00; // Shoulder Lift

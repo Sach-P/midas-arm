@@ -28,6 +28,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
       "srv/ResetJointStates.srv" 
       DEPENDENCIES    
 )
+
 rosidl_get_typesupport_target(cpp_typesupport_target
   ${PROJECT_NAME} rosidl_typesupport_cpp)
 
@@ -49,6 +50,7 @@ add_executable(midas_controller_node src/midas_controller_node.cpp src/midas_con
 target_include_directories(midas_controller_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
+target_link_libraries(midas_controller_node ${cpp_typesupport_target})
 target_compile_features(midas_controller_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
 # install(TARGETS midas_controller_node
