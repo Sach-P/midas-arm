@@ -25,7 +25,9 @@ void midas_controller::MidasControllerNode::start(){
 
 
 void midas_controller::MidasControllerNode::joint_state_callback(const sensor_msgs::msg::JointState::ConstSharedPtr& joint_states){
-    RCLCPP_INFO(this->get_logger(), "Positions: %s", rcpputils::join(joint_states->position, ", ").c_str());
+    RCLCPP_INFO(this->get_logger(), "Position: %s", rcpputils::join(joint_states->position, ", ").c_str());
+    RCLCPP_INFO(this->get_logger(), "Velocity: %s", rcpputils::join(joint_states->velocity, ", ").c_str());
+    RCLCPP_INFO(this->get_logger(), "Effort: %s", rcpputils::join(joint_states->effort, ", ").c_str());
 
     //Hardware Interface Here
 
