@@ -1,0 +1,46 @@
+[0.012s] Invoking command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sachin/ros2_ws/midas_sim/build/midas_sim -- -j12 -l12
+[0.063s] [ 50%] [32mBuilding CXX object CMakeFiles/midas_sim.dir/src/RobotDriver.cpp.o[0m
+[3.256s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:[m[K In member function ‘[01m[Kvirtual void robot_driver::RobotDriver::init(webots_ros2_driver::WebotsNode*, std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >&)[m[K’:
+[3.256s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:28:18:[m[K [01;31m[Kerror: [m[K‘[01m[KMyRobotDriver[m[K’ has not been declared
+[3.256s]    28 |       std::bind(&[01;31m[KMyRobotDriver[m[K::cmdVelCallback, this, std::placeholders::_1));
+[3.256s]       |                  [01;31m[K^~~~~~~~~~~~~[m[K
+[3.269s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[3.269s]                  from [01m[K/opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp:52[m[K,
+[3.269s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp:38[m[K,
+[3.269s]                  from [01m[K/opt/ros/humble/include/webots_ros2_driver/WebotsNode.hpp:26[m[K,
+[3.269s]                  from [01m[K/home/sachin/ros2_ws/midas_sim/include/midas_sim/RobotDriver.hpp:6[m[K,
+[3.269s]                  from [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:1[m[K:
+[3.269s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:[m[K At global scope:
+[3.269s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:54:38:[m[K [01;31m[Kerror: [m[K‘[01m[KMyRobotDriver[m[K’ in namespace ‘[01m[Krobot_driver[m[K’ does not name a type; did you mean ‘[01m[KRobotDriver[m[K’?
+[3.269s]    54 | PLUGINLIB_EXPORT_CLASS(robot_driver::[01;31m[KMyRobotDriver[m[K,
+[3.269s]       |                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[3.279s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[3.279s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:54:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+[3.279s]    54 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(robot_driver::MyRobotDriver,
+[3.280s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.280s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:54:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [28], const char [36])[m[K’
+[3.280s]    54 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(robot_driver::MyRobotDriver,
+[3.280s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.280s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[3.280s]                  from [01m[K/opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp:52[m[K,
+[3.280s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp:38[m[K,
+[3.280s]                  from [01m[K/opt/ros/humble/include/webots_ros2_driver/WebotsNode.hpp:26[m[K,
+[3.280s]                  from [01m[K/home/sachin/ros2_ws/midas_sim/include/midas_sim/RobotDriver.hpp:6[m[K,
+[3.280s]                  from [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:1[m[K:
+[3.280s] [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+[3.281s]   210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+[3.281s]       |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.281s] [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.281s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[3.281s]                  from [01m[K/opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp:52[m[K,
+[3.281s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp:38[m[K,
+[3.281s]                  from [01m[K/opt/ros/humble/include/webots_ros2_driver/WebotsNode.hpp:26[m[K,
+[3.281s]                  from [01m[K/home/sachin/ros2_ws/midas_sim/include/midas_sim/RobotDriver.hpp:6[m[K,
+[3.281s]                  from [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:1[m[K:
+[3.281s] [01m[K/home/sachin/ros2_ws/midas_sim/src/RobotDriver.cpp:54:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.281s]    54 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(robot_driver::MyRobotDriver,
+[3.281s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.211s] gmake[2]: *** [CMakeFiles/midas_sim.dir/build.make:76: CMakeFiles/midas_sim.dir/src/RobotDriver.cpp.o] Error 1
+[4.212s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/midas_sim.dir/all] Error 2
+[4.212s] gmake: *** [Makefile:146: all] Error 2
+[4.214s] Invoked command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sachin/ros2_ws/midas_sim/build/midas_sim -- -j12 -l12

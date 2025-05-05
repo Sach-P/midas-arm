@@ -1,0 +1,842 @@
+#VRML_SIM R2023b utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the Midas
+# Extracted from: /home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/robot.urdf
+
+PROTO Midas [
+  field  SFVec3f     translation     0 0 0
+  field  SFRotation  rotation        0 0 1 0
+  field  SFString    name            "Midas"  # Is `Robot.name`.
+  field  SFString    controller      "void"   # Is `Robot.controller`.
+  field  MFString    controllerArgs  []       # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""       # Is `Robot.customData`.
+  field  SFBool      supervisor      FALSE    # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE     # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE    # Is `Robot.selfCollision`.
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    synchronization IS synchronization
+    selfCollision IS selfCollision
+    children [
+      Pose {
+        translation -0.000000 0.000000 0.000000
+        rotation -0.577350 0.577350 -0.577350 2.094395
+        children [
+          Shape {
+            appearance DEF 23hs22-2804s_material PBRAppearance {
+              baseColor 0.768627 0.886275 0.952941
+              roughness 1.000000
+              metalness 0
+            }
+            geometry DEF 23hs22-2804s Mesh {
+              url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/23hs22-2804s.stl"
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0.000000 0.000000 0.072250
+        rotation 0.391041 0.650802 0.650802 2.396073
+        children [
+          Shape {
+            appearance DEF ring_material PBRAppearance {
+              baseColor 0.615686 0.811765 0.929412
+              roughness 1.000000
+              metalness 0
+            }
+            geometry DEF ring Mesh {
+              url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/ring.stl"
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -0.008074 0.043597 0.072250
+        rotation 0.496683 -0.613721 -0.613721 2.219612
+        children [
+          Shape {
+            appearance DEF planet_material PBRAppearance {
+              baseColor 0.615686 0.811765 0.929412
+              roughness 1.000000
+              metalness 0
+            }
+            geometry DEF planet Mesh {
+              url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/planet.stl"
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0.000000 0.000000 0.072250
+        rotation 0.391041 0.650802 0.650802 2.396073
+        children [
+          Shape {
+            appearance DEF top_cover_material PBRAppearance {
+              baseColor 0.972549 0.529412 0.003922
+              roughness 1.000000
+              metalness 0
+            }
+            geometry DEF top_cover Mesh {
+              url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/top_cover.stl"
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -0.028716 -0.005318 0.064250
+        rotation -0.878674 0.337588 -0.337588 1.699778
+        children [
+          Shape {
+            appearance USE planet_material
+            geometry USE planet
+          }
+        ]
+      }
+      Pose {
+        translation -0.000000 0.000000 0.072250
+        rotation 0.463605 -0.626526 -0.626526 2.273372
+        children [
+          Shape {
+            appearance DEF bottom_cover_material PBRAppearance {
+              baseColor 0.768627 0.886275 0.952941
+              roughness 1.000000
+              metalness 0
+            }
+            geometry DEF bottom_cover Mesh {
+              url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/bottom_cover.stl"
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0.018963 -0.022209 0.072250
+        rotation 0.657963 0.532487 0.532487 1.977688
+        children [
+          Shape {
+            appearance USE planet_material
+            geometry USE planet
+          }
+        ]
+      }
+      Pose {
+        translation 0.000000 0.000000 0.072250
+        rotation 0.999307 0.026315 0.026315 1.571489
+        children [
+          Shape {
+            appearance DEF carrier_material PBRAppearance {
+              baseColor 0.647059 0.647059 0.647059
+              roughness 1.000000
+              metalness 0
+            }
+            geometry DEF carrier Mesh {
+              url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/carrier.stl"
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0.000000 0.000000 0.064250
+        rotation -0.697900 0.506427 -0.506427 1.922963
+        children [
+          Shape {
+            appearance DEF sun_material PBRAppearance {
+              baseColor 0.615686 0.811765 0.929412
+              roughness 1.000000
+              metalness 0
+            }
+            geometry DEF sun Mesh {
+              url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/sun.stl"
+            }
+          }
+        ]
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis -0.000000 -0.000000 -1.000000
+          anchor 0.000000 0.000000 0.099250
+        }
+        device [
+          RotationalMotor {
+            name "J1"
+            maxVelocity 2.871
+            minPosition -2.9671
+            maxPosition 2.9671
+            maxTorque 12.0
+          }
+          PositionSensor {
+            name "J1_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation 0.000000 0.000000 0.099250
+          rotation 0.990139 0.140090 -0.000000 3.141593
+          children [
+            Pose {
+              translation 0.000000 -0.000000 -0.010000
+              children [
+                Shape {
+                  appearance DEF platform_material PBRAppearance {
+                    baseColor 0.615686 0.811765 0.929412
+                    roughness 1.000000
+                    metalness 0
+                  }
+                  geometry DEF platform Mesh {
+                    url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/platform.stl"
+                  }
+                }
+              ]
+            }
+            Pose {
+              translation 0.000000 0.067500 -0.044570
+              rotation 0.000000 1.000000 -0.000000 1.570796
+              children [
+                Shape {
+                  appearance USE 23hs22-2804s_material
+                  geometry USE 23hs22-2804s
+                }
+              ]
+            }
+            Pose {
+              translation -0.000000 -0.112000 -0.044570
+              rotation 0.949424 -0.000000 0.313997 3.141593
+              children [
+                Shape {
+                  appearance DEF flange2_material PBRAppearance {
+                    baseColor 0.615686 0.811765 0.929412
+                    roughness 1.000000
+                    metalness 0
+                  }
+                  geometry DEF flange2 Mesh {
+                    url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/flange2.stl"
+                  }
+                }
+              ]
+            }
+            Pose {
+              translation -0.000000 -0.080000 -0.044570
+              rotation -0.000000 -1.000000 0.000000 3.141593
+              children [
+                Shape {
+                  appearance DEF 23-motor_mount_material PBRAppearance {
+                    baseColor 0.615686 0.811765 0.929412
+                    roughness 1.000000
+                    metalness 0
+                  }
+                  geometry DEF 23-motor_mount Mesh {
+                    url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/23-motor_mount.stl"
+                  }
+                }
+              ]
+            }
+            Pose {
+              translation -0.014796 -0.027250 -0.030605
+              rotation -0.000000 -1.000000 0.000000 3.141593
+              children [
+                Shape {
+                  appearance DEF composite_part_1_material PBRAppearance {
+                    baseColor 0.615686 0.811765 0.929412
+                    roughness 1.000000
+                    metalness 0
+                  }
+                  geometry DEF composite_part_1 Mesh {
+                    url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/composite_part_1.stl"
+                  }
+                }
+              ]
+            }
+            HingeJoint {
+              jointParameters HingeJointParameters {
+                axis -0.000000 1.000000 -0.000000
+                anchor -0.000000 -0.112500 -0.044570
+              }
+              device [
+                RotationalMotor {
+                  name "J2"
+                  maxVelocity 2.871
+                  minPosition -2.9671
+                  maxPosition 2.9671
+                  maxTorque 12.0
+                }
+                PositionSensor {
+                  name "J2_sensor"
+                }
+              ]
+              endPoint Solid {
+                translation -0.000000 -0.112500 -0.044570
+                rotation -0.955153 -0.209383 -0.209383 1.616664
+                children [
+                  Pose {
+                    translation -0.190600 -0.000000 -0.062000
+                    rotation -0.577350 0.577350 -0.577350 2.094395
+                    children [
+                      Shape {
+                        appearance USE 23hs22-2804s_material
+                        geometry USE 23hs22-2804s
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0.000000 -0.000000 0.000000
+                    rotation 1.000000 -0.000000 -0.000000 1.570796
+                    children [
+                      Shape {
+                        appearance DEF upperarm_material PBRAppearance {
+                          baseColor 0.615686 0.811765 0.929412
+                          roughness 1.000000
+                          metalness 0
+                        }
+                        geometry DEF upperarm Mesh {
+                          url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/upperarm.stl"
+                        }
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.190600 0.000000 0.017250
+                    rotation 0.281085 -0.678598 -0.678598 2.593564
+                    children [
+                      Shape {
+                        appearance USE ring_material
+                        geometry USE ring
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.165014 -0.002599 0.017250
+                    rotation 0.324765 -0.668778 -0.668778 2.513554
+                    children [
+                      Shape {
+                        appearance USE planet_material
+                        geometry USE planet
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.190600 0.000000 0.017250
+                    rotation 0.281085 -0.678598 -0.678598 2.593564
+                    children [
+                      Shape {
+                        appearance USE top_cover_material
+                        geometry USE top_cover
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.186302 0.042319 0.009250
+                    rotation -0.722312 0.489012 -0.489012 1.890504
+                    children [
+                      Shape {
+                        appearance USE planet_material
+                        geometry USE planet
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.190600 -0.000000 0.017250
+                    rotation 1.000000 0.000000 0.000000 1.570796
+                    children [
+                      Shape {
+                        appearance USE bottom_cover_material
+                        geometry USE bottom_cover
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.229398 -0.017437 0.017250
+                    rotation 0.824328 0.400302 0.400302 1.762792
+                    children [
+                      Shape {
+                        appearance USE planet_material
+                        geometry USE planet
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.190600 0.000000 0.017250
+                    rotation 0.020992 0.706951 0.706951 3.099615
+                    children [
+                      Shape {
+                        appearance USE carrier_material
+                        geometry USE carrier
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.190600 0.000000 0.009250
+                    rotation -0.783260 0.439605 -0.439605 1.812693
+                    children [
+                      Shape {
+                        appearance USE sun_material
+                        geometry USE sun
+                      }
+                    ]
+                  }
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis -0.000000 -0.000000 -1.000000
+                      anchor -0.190600 0.000000 0.044250
+                    }
+                    device [
+                      RotationalMotor {
+                        name "J3"
+                        maxVelocity 2.871
+                        minPosition -2.9671
+                        maxPosition 2.9671
+                        maxTorque 12.0
+                      }
+                      PositionSensor {
+                        name "J3_sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.190600 0.000000 0.044250
+                      rotation 0.887980 -0.459883 -0.000000 3.141593
+                      children [
+                        Pose {
+                          translation 0.000000 0.023715 -0.026000
+                          rotation 1.000000 0.000000 -0.000000 3.141593
+                          children [
+                            Shape {
+                              appearance DEF 17-motor-mount_material PBRAppearance {
+                                baseColor 0.615686 0.811765 0.929412
+                                roughness 1.000000
+                                metalness 0
+                              }
+                              geometry DEF 17-motor-mount Mesh {
+                                url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/17-motor-mount.stl"
+                              }
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation -0.000000 0.023715 -0.026000
+                          rotation 1.000000 -0.000000 -0.000000 1.570796
+                          children [
+                            Shape {
+                              appearance DEF 17he19-2004s_material PBRAppearance {
+                                baseColor 0.498039 0.498039 0.498039
+                                roughness 1.000000
+                                metalness 0
+                              }
+                              geometry DEF 17he19-2004s Mesh {
+                                url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/17he19-2004s.stl"
+                              }
+                            }
+                          ]
+                        }
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis -0.000000 1.000000 0.000000
+                            anchor -0.000000 0.034965 -0.026000
+                          }
+                          device [
+                            RotationalMotor {
+                              name "J4"
+                              maxVelocity 2.871
+                              minPosition -2.9671
+                              maxPosition 2.9671
+                              maxTorque 12.0
+                            }
+                            PositionSensor {
+                              name "J4_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.000000 0.034965 -0.026000
+                            rotation -0.972917 -0.163452 -0.163452 1.598250
+                            children [
+                              Pose {
+                                translation 0.020000 0.000000 0.223880
+                                rotation -0.000000 0.000000 1.000000 1.570796
+                                children [
+                                  Shape {
+                                    appearance DEF horizontal_mount-17_material PBRAppearance {
+                                      baseColor 0.615686 0.811765 0.929412
+                                      roughness 1.000000
+                                      metalness 0
+                                    }
+                                    geometry DEF horizontal_mount-17 Mesh {
+                                      url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/horizontal_mount-17.stl"
+                                    }
+                                  }
+                                ]
+                              }
+                              Pose {
+                                translation 0.000000 0.000000 0.223880
+                                rotation -0.000000 1.000000 0.000000 1.570796
+                                children [
+                                  Shape {
+                                    appearance DEF 17hs08-1004s_material PBRAppearance {
+                                      roughness 1.000000
+                                      metalness 0
+                                    }
+                                    geometry DEF 17hs08-1004s Mesh {
+                                      url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/17hs08-1004s.stl"
+                                    }
+                                  }
+                                ]
+                              }
+                              Pose {
+                                translation 0.010000 0.015000 0.015000
+                                rotation 0.577350 0.577350 -0.577350 2.094395
+                                children [
+                                  Shape {
+                                    appearance DEF rotator_material PBRAppearance {
+                                      baseColor 0.615686 0.811765 0.929412
+                                      roughness 1.000000
+                                      metalness 0
+                                    }
+                                    geometry DEF rotator Mesh {
+                                      url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/rotator.stl"
+                                    }
+                                  }
+                                ]
+                              }
+                              HingeJoint {
+                                jointParameters HingeJointParameters {
+                                  axis -1.000000 -0.000000 0.000000
+                                  anchor 0.029250 0.000000 0.223880
+                                }
+                                device [
+                                  RotationalMotor {
+                                    name "J5"
+                                    maxVelocity 2.871
+                                    minPosition -2.9671
+                                    maxPosition 2.9671
+                                    maxTorque 12.0
+                                  }
+                                  PositionSensor {
+                                    name "J5_sensor"
+                                  }
+                                ]
+                                endPoint Solid {
+                                  translation 0.029250 0.000000 0.223880
+                                  rotation 0.000000 -1.000000 0.000000 1.570796
+                                  children [
+                                    Pose {
+                                      translation 0.033600 0.011427 0.000000
+                                      rotation 0.577350 0.577350 -0.577350 2.094395
+                                      children [
+                                        Shape {
+                                          appearance DEF j6_mount_material PBRAppearance {
+                                            baseColor 0.615686 0.811765 0.929412
+                                            roughness 1.000000
+                                            metalness 0
+                                          }
+                                          geometry DEF j6_mount Mesh {
+                                            url "/home/sachin/ws_moveit/src/Midas_robot_description/Midas-Robot/j6_mount.stl"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.010600 -0.014573 -0.022500
+                                      rotation -0.577350 0.577350 -0.577350 2.094395
+                                      children [
+                                        Shape {
+                                          appearance USE 17hs08-1004s_material
+                                          geometry USE 17hs08-1004s
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                  name "j5"
+                                  boundingObject Group {
+                                    children [
+                                      Pose {
+                                        translation 0.033600 0.011427 0.000000
+                                        rotation 0.577350 0.577350 -0.577350 2.094395
+                                        children [
+                                          USE j6_mount
+                                        ]
+                                      }
+                                      Pose {
+                                        translation 0.010600 -0.014573 -0.022500
+                                        rotation -0.577350 0.577350 -0.577350 2.094395
+                                        children [
+                                          USE 17hs08-1004s
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                  physics Physics {
+                                    density -1
+                                    mass 0.017895
+                                    centerOfMass [ 0.017372 0.000086 -0.018725 ]
+                                    inertiaMatrix [
+                                      5.953632e-06 6.631466e-06 6.507080e-06
+                                      1.305689e-06 1.220202e-06 -2.178758e-07
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                            name "j4"
+                            boundingObject Group {
+                              children [
+                                Pose {
+                                  translation 0.020000 0.000000 0.223880
+                                  rotation -0.000000 0.000000 1.000000 1.570796
+                                  children [
+                                    USE horizontal_mount-17
+                                  ]
+                                }
+                                Pose {
+                                  translation 0.000000 0.000000 0.223880
+                                  rotation -0.000000 1.000000 0.000000 1.570796
+                                  children [
+                                    USE 17hs08-1004s
+                                  ]
+                                }
+                                Pose {
+                                  translation 0.010000 0.015000 0.015000
+                                  rotation 0.577350 0.577350 -0.577350 2.094395
+                                  children [
+                                    USE rotator
+                                  ]
+                                }
+                              ]
+                            }
+                            physics Physics {
+                              density -1
+                              mass 0.000000
+                            }
+                          }
+                        }
+                      ]
+                      name "j3"
+                      boundingObject Group {
+                        children [
+                          Pose {
+                            translation 0.000000 0.023715 -0.026000
+                            rotation 1.000000 0.000000 -0.000000 3.141593
+                            children [
+                              USE 17-motor-mount
+                            ]
+                          }
+                          Pose {
+                            translation -0.000000 0.023715 -0.026000
+                            rotation 1.000000 -0.000000 -0.000000 1.570796
+                            children [
+                              USE 17he19-2004s
+                            ]
+                          }
+                        ]
+                      }
+                      physics Physics {
+                        density -1
+                        mass 0.000000
+                      }
+                    }
+                  }
+                ]
+                name "j2"
+                boundingObject Group {
+                  children [
+                    Pose {
+                      translation -0.190600 -0.000000 -0.062000
+                      rotation -0.577350 0.577350 -0.577350 2.094395
+                      children [
+                        USE 23hs22-2804s
+                      ]
+                    }
+                    Pose {
+                      translation 0.000000 -0.000000 0.000000
+                      rotation 1.000000 -0.000000 -0.000000 1.570796
+                      children [
+                        USE upperarm
+                      ]
+                    }
+                    Pose {
+                      translation -0.190600 0.000000 0.017250
+                      rotation 0.281085 -0.678598 -0.678598 2.593564
+                      children [
+                        USE ring
+                      ]
+                    }
+                    Pose {
+                      translation -0.165014 -0.002599 0.017250
+                      rotation 0.324765 -0.668778 -0.668778 2.513554
+                      children [
+                        USE planet
+                      ]
+                    }
+                    Pose {
+                      translation -0.190600 0.000000 0.017250
+                      rotation 0.281085 -0.678598 -0.678598 2.593564
+                      children [
+                        USE top_cover
+                      ]
+                    }
+                    Pose {
+                      translation -0.186302 0.042319 0.009250
+                      rotation -0.722312 0.489012 -0.489012 1.890504
+                      children [
+                        USE planet
+                      ]
+                    }
+                    Pose {
+                      translation -0.190600 -0.000000 0.017250
+                      rotation 1.000000 0.000000 0.000000 1.570796
+                      children [
+                        USE bottom_cover
+                      ]
+                    }
+                    Pose {
+                      translation -0.229398 -0.017437 0.017250
+                      rotation 0.824328 0.400302 0.400302 1.762792
+                      children [
+                        USE planet
+                      ]
+                    }
+                    Pose {
+                      translation -0.190600 0.000000 0.017250
+                      rotation 0.020992 0.706951 0.706951 3.099615
+                      children [
+                        USE carrier
+                      ]
+                    }
+                    Pose {
+                      translation -0.190600 0.000000 0.009250
+                      rotation -0.783260 0.439605 -0.439605 1.812693
+                      children [
+                        USE sun
+                      ]
+                    }
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.000000
+                }
+              }
+            }
+          ]
+          name "platform"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0.000000 -0.000000 -0.010000
+                children [
+                  USE platform
+                ]
+              }
+              Pose {
+                translation 0.000000 0.067500 -0.044570
+                rotation 0.000000 1.000000 -0.000000 1.570796
+                children [
+                  USE 23hs22-2804s
+                ]
+              }
+              Pose {
+                translation -0.000000 -0.112000 -0.044570
+                rotation 0.949424 -0.000000 0.313997 3.141593
+                children [
+                  USE flange2
+                ]
+              }
+              Pose {
+                translation -0.000000 -0.080000 -0.044570
+                rotation -0.000000 -1.000000 0.000000 3.141593
+                children [
+                  USE 23-motor_mount
+                ]
+              }
+              Pose {
+                translation -0.014796 -0.027250 -0.030605
+                rotation -0.000000 -1.000000 0.000000 3.141593
+                children [
+                  USE composite_part_1
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 0.000000
+          }
+        }
+      }
+    ]
+    name IS name
+    boundingObject Group {
+      children [
+        Pose {
+          translation -0.000000 0.000000 0.000000
+          rotation -0.577350 0.577350 -0.577350 2.094395
+          children [
+            USE 23hs22-2804s
+          ]
+        }
+        Pose {
+          translation 0.000000 0.000000 0.072250
+          rotation 0.391041 0.650802 0.650802 2.396073
+          children [
+            USE ring
+          ]
+        }
+        Pose {
+          translation -0.008074 0.043597 0.072250
+          rotation 0.496683 -0.613721 -0.613721 2.219612
+          children [
+            USE planet
+          ]
+        }
+        Pose {
+          translation 0.000000 0.000000 0.072250
+          rotation 0.391041 0.650802 0.650802 2.396073
+          children [
+            USE top_cover
+          ]
+        }
+        Pose {
+          translation -0.028716 -0.005318 0.064250
+          rotation -0.878674 0.337588 -0.337588 1.699778
+          children [
+            USE planet
+          ]
+        }
+        Pose {
+          translation -0.000000 0.000000 0.072250
+          rotation 0.463605 -0.626526 -0.626526 2.273372
+          children [
+            USE bottom_cover
+          ]
+        }
+        Pose {
+          translation 0.018963 -0.022209 0.072250
+          rotation 0.657963 0.532487 0.532487 1.977688
+          children [
+            USE planet
+          ]
+        }
+        Pose {
+          translation 0.000000 0.000000 0.072250
+          rotation 0.999307 0.026315 0.026315 1.571489
+          children [
+            USE carrier
+          ]
+        }
+        Pose {
+          translation 0.000000 0.000000 0.064250
+          rotation -0.697900 0.506427 -0.506427 1.922963
+          children [
+            USE sun
+          ]
+        }
+      ]
+    }
+    physics Physics {
+      density -1
+      mass 0.000000
+    }
+  }
+}

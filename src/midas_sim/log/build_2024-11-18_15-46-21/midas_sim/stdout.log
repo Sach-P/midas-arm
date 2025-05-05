@@ -1,0 +1,34 @@
+[35m[1mConsolidate compiler generated dependencies of target midas_sim[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/midas_sim.dir/src/RobotDriver.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmidas_sim.so[0m
+[100%] Built target midas_sim
+-- Install configuration: ""
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/robot_driver.xml
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/lib/libmidas_sim.so
+-- Set runtime path of "/home/sachin/ros2_ws/midas_sim/install/midas_sim/lib/libmidas_sim.so" to ""
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//launch
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//launch/robot_launch.py
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//resource
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//resource/my_robot.urdf
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//worlds
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//worlds/my_world.wbt
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/library_path.sh
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/library_path.dsv
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/package_run_dependencies/midas_sim
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/parent_prefix_path/midas_sim
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/ament_prefix_path.sh
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/ament_prefix_path.dsv
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/path.sh
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/path.dsv
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.bash
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.sh
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.zsh
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.dsv
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/package.dsv
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/packages/midas_sim
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/midas_sim
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/midas_simConfig.cmake
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/midas_simConfig-version.cmake
+-- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/package.xml

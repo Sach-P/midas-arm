@@ -1,0 +1,2 @@
+Invoking command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sachin/ros2_ws/midas_sim -DCMAKE_INSTALL_PREFIX=/home/sachin/ros2_ws/midas_sim/install/midas_sim
+Invoked command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sachin/ros2_ws/midas_sim -DCMAKE_INSTALL_PREFIX=/home/sachin/ros2_ws/midas_sim/install/midas_sim

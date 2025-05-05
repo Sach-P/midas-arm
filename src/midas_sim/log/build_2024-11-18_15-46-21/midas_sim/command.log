@@ -1,0 +1,4 @@
+Invoking command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sachin/ros2_ws/midas_sim/build/midas_sim -- -j12 -l12
+Invoked command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sachin/ros2_ws/midas_sim/build/midas_sim -- -j12 -l12
+Invoking command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sachin/ros2_ws/midas_sim/build/midas_sim
+Invoked command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sachin/ros2_ws/midas_sim/build/midas_sim

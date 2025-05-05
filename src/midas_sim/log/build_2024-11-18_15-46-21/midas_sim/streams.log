@@ -1,0 +1,38 @@
+[0.012s] Invoking command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sachin/ros2_ws/midas_sim/build/midas_sim -- -j12 -l12
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target midas_sim[0m
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/midas_sim.dir/src/RobotDriver.cpp.o[0m
+[10.560s] [100%] [32m[1mLinking CXX shared library libmidas_sim.so[0m
+[11.154s] [100%] Built target midas_sim
+[11.166s] Invoked command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sachin/ros2_ws/midas_sim/build/midas_sim -- -j12 -l12
+[11.199s] Invoking command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sachin/ros2_ws/midas_sim/build/midas_sim
+[11.206s] -- Install configuration: ""
+[11.206s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/robot_driver.xml
+[11.206s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/lib/libmidas_sim.so
+[11.214s] -- Set runtime path of "/home/sachin/ros2_ws/midas_sim/install/midas_sim/lib/libmidas_sim.so" to ""
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//launch
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//launch/robot_launch.py
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//resource
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//resource/my_robot.urdf
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//worlds
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim//worlds/my_world.wbt
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/library_path.sh
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/library_path.dsv
+[11.214s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/package_run_dependencies/midas_sim
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/parent_prefix_path/midas_sim
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/ament_prefix_path.sh
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/ament_prefix_path.dsv
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/path.sh
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/environment/path.dsv
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.bash
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.sh
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.zsh
+[11.215s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/local_setup.dsv
+[11.216s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/package.dsv
+[11.216s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/packages/midas_sim
+[11.216s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/midas_sim
+[11.216s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.216s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/ament_cmake_export_libraries-extras.cmake
+[11.216s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/midas_simConfig.cmake
+[11.217s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/cmake/midas_simConfig-version.cmake
+[11.217s] -- Installing: /home/sachin/ros2_ws/midas_sim/install/midas_sim/share/midas_sim/package.xml
+[11.219s] Invoked command in '/home/sachin/ros2_ws/midas_sim/build/midas_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sachin/ros2_ws/midas_sim/build/midas_sim
